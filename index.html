@@ -4,57 +4,97 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Double Bomb Interactive</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Doulbe Bomb Interactive. Creators of the tank party game, ALL THINGS GO BOOM!">
+    <meta name="theme-color" content="#160417">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
-    <script href="js/main.js"></script>
+    <script src="//use.typekit.net/djg4kxe.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
   </head>
   <body>
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <header>
-      <nav>
+      <nav class="hide-on-mobile">
         <ul>
           <li>
-            <a href="http://allthingsgoboom.com/" title="all things go boom website">ALL THINGS GO BOOM</a>
+            <a href="http://allthingsgoboom.com/" title="all things go boom website">ALL THINGS GO BOOM!</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="logo">
+        <img src="img/logo.png" alt="Double Bomb Interactive Logo">
+      </div>
+      <nav class="hide-on-mobile">
+        <ul>
+          <li>
+            <a href="http://doublebomb.com/blog">Startup Blog</a>
+          </li>
+          <li>
+            <a href="http://doublebomb.com/press">Presskit</a>
           </li>
         </ul>
       </nav>
     </header>
     
-    <section>
-      <h2>We are a dev duo...</h2>
-      <div class="portrait">
-        <img src="img/dave.png" alt="davebot">
-        <em>Dave</em>
-        <p>Art, Bad Programming</p>
-      </div>
-      <div class="portrait">
-        <img src="img/will.png" alt="davebot">
-        <em>Will</em>
-        <p>Programming, Bad Art</p>
-      </div>
-    </section>
-    
-    <section>
-      <h2>Working on our first commericial game...</h2>
-      <a href="http://allthingsgoboom.com/" target="_blank">
-        <img src="img/allthingsgoboomlogo.png" alt="all things go boom logo">
-      </a>
-      <p>for <span id="time"></span></p>
-    </section>
-    
-    <section>
-      <h2>We have no idea what we're doing.</h2>
-      <p>Follow along on our <a href="http://doublebomb.com/blog" title="double bomb startup blog">startup blog</a> and read about our moments of glory and our tales of disaster.</p>
-    </section>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/{{JQUERY_VERSION}}/jquery.min.js"></script>
+    <div id="container">
+      <section class="dev-duo clearfix">
+        <h2>We are a dev duo...</h2>
+        <div class="portrait dave">
+          <img src="img/davebot.png" alt="davebot">
+          <h3>Dave</h3>
+          <p>Art, Bad Programming</p>
+        </div>
+        <div class="portrait will">
+          <img src="img/willbot.png" alt="davebot">
+          <h3>Will</h3>
+          <p>Programming, Bad Art</p>
+        </div>
+      </section>
+      
+      <section>
+        <h2>working on our first commericial game...</h2>
+        <a href="http://allthingsgoboom.com/" target="_blank">
+          <img src="img/atgblogo.png" alt="all things go boom logo">
+        </a>
+        <p>for <span id="time"></span></p>
+      </section>
+      
+      <section>
+        <h2>We have no idea what we're doing.</h2>
+        <p>Follow along on our <a href="http://doublebomb.com/blog" title="double bomb startup blog" class="startup-blog">startup blog</a> and read about our moments of glory and our tales of disaster.</p>
+      </section>
+      
+      <section class="social-media hide-on-mobile">
+        <h2>Social media and stuff</h2>
+        <ul>
+          <li>
+            <a href="">
+              <img src="img/twitter.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="img/facebook.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="img/youtube.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="img/email.png" alt="">
+            </a>
+          </li>
+        </ul>
+      </section> 
+    </div>
     <script src="js/main.js"></script>
-
   </body>
 </html>

@@ -1,7 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-	background: black;
+	background: #160417;
+  font-family: "futura-pt-condensed", sans-serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/*-- HELPERS -----------------------------*/
+
+.clearfix:after { 
+  content: "."; 
+  visibility: hidden; 
+  display: block; 
+  height: 0; 
+  clear: both;
+}
+
+/*-- HEADER -----------------------------*/
+
+header {
+  background: black;
+  position: relative;
+  height: 175px;
+}
+
+header .logo {
+  position: absolute;
+  z-index: 5;
+  top: 20px;
+  left: 50%;
+  margin-left: -308px;
+}
+
+nav {
+  float: left;
+  margin: 70px 5% 0;
+}
+
+nav a {
+  font-size: 25px;
+}
+
+nav:last-of-type {
+  text-align: right;
+  float: right;
+}
+
+nav:last-of-type ul li {
+  padding-left: 30px;
+}
+
+nav ul li {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+}
+
+
+/*-- BODY -----------------------------*/
+
+#container {
+  text-align: center;
+  width: 1000px;
+  margin: 0 auto;  
 }
 
 h2, p {
   color: white;
+  font-size: 32px;
+}
+
+section {
+  margin-top: 350px;
+}
+
+section:first-of-type {
+  margin-top: 100px;
+}
+
+h2 {
+  font-weight: normal;
+  margin-bottom: 70px;
+}
+
+.dev-duo {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.portrait h3 {
+  font-weight: normal;
+  margin: 30px 0 0;
+  font-size: 40px;
+}
+
+.portrait.dave {
+  float: left;
+}
+
+.portrait.dave h3 {
+  color: #a3fcef;
+}
+
+.portrait.will {
+  float: right;
+}
+
+.portrait.will img {
+  margin: 26px -46px 0 0;
+}
+
+.portrait.will h3 {
+  color: #fdb8cf;
+}
+
+#time {
+  font-size: 25px;
+  color: #f70364;
+  display: inline-block;
+  margin-top: 60px;
+}
+
+.startup-blog {
+  background: #f70364;
+  padding: 5px;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+}
+
+.social-media {
+  width: 600px;
+  margin: 350px auto 0;
+  height: 300px;
+}
+
+.social-media ul li {
+  float: left;
+  margin-right: 14.44%;
+}
+
+.social-media ul li:last-of-type {
+  margin-right: 0;
+}
+
+
+
+@media only screen and (max-width: 768px) { 
+  .hide-on-mobile {
+    display: none;
+  }
 }
