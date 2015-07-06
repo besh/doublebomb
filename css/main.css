@@ -82,7 +82,7 @@ section {
 }
 
 section:first-of-type {
-  margin-top: 100px;
+  padding-top: 100px;
 }
 
 h2 {
@@ -121,11 +121,27 @@ h2 {
   color: #fdb8cf;
 }
 
+.atgb-logo {
+  width: 100%;
+}
+
+.atgb-logo img {
+  width: 90%;
+}
+
+.first-game p {
+  margin-top: 0;
+}
+
 #time {
   font-size: 25px;
   color: #f70364;
   display: inline-block;
   margin-top: 60px;
+}
+
+section.start-up-blog {
+  margin-bottom: 0;
 }
 
 .startup-blog {
@@ -151,10 +167,139 @@ h2 {
   margin-right: 0;
 }
 
+.mobile-nav {
+  display: none;
+}
+
+#mobile-nav-btn {
+  display: none;
+}
 
 
-@media only screen and (max-width: 768px) { 
+/*-- MOBILE STYLES -----------------------------*/
+
+@media only screen and (max-width: 983px) { 
   .hide-on-mobile {
     display: none;
+  }
+  
+  .mobile-nav {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 250px;
+    background: black;
+    height: 100%;
+    transition: all .23s ease-out;
+    -webkit-transition: all .23s ease-out;
+    transform: translateX(-250px);
+    -webkit-transform: translateX(-250px);
+  }
+  
+  #container {
+    width: initial;
+    margin: 0 20px;
+    transition: all .23s ease-out;
+    -webkit-transition: all .23s ease-out;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+  }
+    
+  body.open .mobile-nav {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    background: #333;
+  }
+  
+  body.open #container {
+    transform: translateX(250px);
+    -webkit-transform: translateX(250px);
+  }
+  
+  body.open header {
+    transform: translateX(250px);
+    -webkit-transform: translateX(250px);
+  }
+  
+  .mobile-nav a {
+    display: block;
+    height: 47px;
+    border-bottom: 1px solid gray;
+    line-height: 2.6;
+    padding: 10px;
+    font-size: 20px;
+  }
+  
+  .mobile-nav img {
+    width: 50px;
+  }
+  
+  #mobile-nav-btn {
+    display: block;
+    width: 32px;
+    height: 32px;
+    padding: 30px 0 0 20px;
+  }
+  
+  #mobile-nav-btn span {
+    height: 2px;
+    border-radius: 5px;
+    width: 100%;
+    background: white;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  header {
+    height: 80px;
+    transition: all .23s ease-out;
+    -webkit-transition: all .23s ease-out;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+  }
+  
+  header .logo {
+    margin-left: -100px;
+  }
+  
+  header .logo img {
+    width: 200px;
+  }
+  
+  section {
+    width: initial;
+    margin-top: 200px;
+  }
+  
+  section.dev-duo {
+    width: initial;
+  }
+  
+  .portrait.dave, .portrait.will {
+    float: initial;
+  }
+  
+  .portrait.will {
+    margin-top: 40px;
+  }
+  
+  .first-game p {
+    margin-top: 20px;
+  }
+  
+  #time {
+    margin-top: 20px;
+  }
+  
+  .atgb-logo {
+    width: 100%;
+  }
+  
+  .atgb-logo img {
+    width: 80%;
+  }
+  
+  section.start-up-blog {
+    margin-bottom: 40px;
   }
 }
