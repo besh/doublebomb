@@ -1,13 +1,13 @@
 function getElapsedTime() {
-  var date1 = new Date("20/Jan/2015 6:30:00"); 
-  var date2 = new Date();
-  var diff = date2.getTime() - date1.getTime();
-  var days = Math.floor(diff / (1000 * 60 * 60 * 24)); diff -= days * (1000 * 60 * 60 * 24);
-  var hours = Math.floor(diff / (1000 * 60 * 60)); diff -= hours * (1000 * 60 * 60);
-  var mins = Math.floor(diff / (1000 * 60)); diff -= mins * (1000 * 60);
-  var seconds = Math.floor(diff / (1000)); diff -= seconds * (1000);
+  var startDate   = new Date('Tue Jan 20 2015 06:30:00 GMT-0400 (Eastern Daylight Time)')
+  var currentDate = new Date();
+  var diff        = currentDate.getTime() - startDate.getTime();
+  var days        = Math.floor(diff / (1000 * 60 * 60 * 24)); diff -= days * (1000 * 60 * 60 * 24);
+  var hours       = Math.floor(diff / (1000 * 60 * 60)); diff -= hours * (1000 * 60 * 60);
+  var mins        = Math.floor(diff / (1000 * 60)); diff -= mins * (1000 * 60);
+  var seconds     = Math.floor(diff / (1000)); diff -= seconds * (1000);
   var elapsedTime = days + ' days, ' + hours + ' hours, ' + mins + ' minutes, and ' + seconds + ' seconds.';
-  
+   
   document.getElementById('time').innerHTML = elapsedTime;
 }
 
@@ -41,7 +41,7 @@ function toggleClass(ele, cls) {
 
 var mobileNav = document.getElementById('mobile-nav-btn');
 var container = document.getElementById('container');
-var body      = document.getElementsByTagName("BODY")[0];
+var body      = document.getElementsByTagName('BODY')[0];
 
 mobileNav.addEventListener('click', function() { 
   toggleClass(body, 'open');
